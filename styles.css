@@ -1229,3 +1229,39 @@ h6 {
     color: var(--white);
     transform: translateY(-2px);
 }
+/* Experience bullets */
+.experience-list {
+    list-style: disc;
+    padding-left: 1.2rem;
+    margin: 0 0 1rem 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.experience-list li + li {
+    margin-top: 0.5rem;
+}
+
+.experience-list strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Stop the About section from overflowing on phones */
+.about-grid > * {
+    min-width: 0;
+}
+
+.stats-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-grid-new > *,
+.contact-card > div {
+    min-width: 0;
+}
+
+.contact-card p {
+    overflow-wrap: anywhere;
+}

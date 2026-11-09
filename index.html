@@ -10,19 +10,17 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://dilroseworks.github.io/Portfolio-Dilrose/">
+    <meta property="og:url" content="https://dilroseworks.github.io/Portfolio/">
     <meta property="og:title" content="Mohamed Dilrose | Data Scientist & Analyst">
     <meta property="og:description"
         content="Turning raw data into actionable insights through analytics, machine learning, and AI-driven solutions.">
-    <meta property="og:image" content="https://dilroseworks.github.io/Portfolio-Dilrose/assets/og-home.png">
 
     <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://dilroseworks.github.io/Portfolio-Dilrose/">
+    <meta property="twitter:card" content="summary">
+    <meta property="twitter:url" content="https://dilroseworks.github.io/Portfolio/">
     <meta property="twitter:title" content="Mohamed Dilrose | Data Scientist & Analyst">
     <meta property="twitter:description"
         content="Turning raw data into actionable insights through analytics, machine learning, and AI-driven solutions.">
-    <meta property="twitter:image" content="https://dilroseworks.github.io/Portfolio-Dilrose/assets/og-home.png">
 
 
     <!-- Google Fonts -->
@@ -46,6 +44,7 @@
             <div class="nav-links-desktop">
                 <a href="#home">Home</a>
                 <a href="#about">About</a>
+                <a href="#experience">Experience</a>
                 <a href="#education">Education</a>
                 <a href="#certifications">Certifications</a>
                 <a href="#skills">Skills</a>
@@ -61,7 +60,9 @@
         <div class="mobile-menu hidden">
             <a href="#home">Home</a>
             <a href="#about">About</a>
+            <a href="#experience">Experience</a>
             <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
             <a href="#skills">Skills</a>
             <a href="#services">Services</a>
             <a href="#portfolio">Portfolio</a>
@@ -97,7 +98,7 @@
                     <div class="cta-buttons fade-in-up delay-400">
                         <a href="#portfolio" class="btn btn-hero">View Portfolio</a>
                         <a href="#contact" class="btn btn-hero-outline">Contact Me</a>
-                        <a href="Mohamed_Dilrose.pdf" download class="btn btn-hero-outline">
+                        <a href="Mohamed_Dilrose_Resume.pdf" download class="btn btn-hero-outline">
                             <i class="fas fa-download"></i> Download Resume
                         </a>
                     </div>
@@ -181,8 +182,65 @@
             </div>
         </section>
 
+        <!-- Experience Section -->
+        <section id="experience" class="section-padding bg-secondary-soft">
+            <div class="container">
+                <div class="section-header text-center">
+                    <span class="section-subtitle">Experience</span>
+                    <h2 class="section-title-large">Professional <span class="text-gradient">Experience</span></h2>
+                    <div class="section-divider"></div>
+                </div>
+
+                <div class="timeline-wrapper">
+                    <div class="timeline-line"></div>
+
+                    <!-- Techfaya -->
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-card glass">
+                            <div class="card-header-flex">
+                                <h3>Business Intelligence Analyst</h3>
+                                <span class="badge"><i class="fas fa-calendar"></i> May 2026 - Sep 2026</span>
+                            </div>
+                            <div class="card-meta">
+                                <span class="meta-item font-white">Techfaya Innovations Pvt. Ltd.</span>
+                                <span class="separator">•</span>
+                                <span class="meta-item"><i class="fas fa-map-marker-alt"></i> Technopark, Kerala, India</span>
+                            </div>
+                            <ul class="experience-list">
+                                <li><strong>Marketing Analytics:</strong> Built Google/Meta Ads dashboards in Looker
+                                    Studio for 3 stores; recommended cutting saturated spend by about 25%, after which
+                                    one store's ROAS rose from 9.8 to 11.6 and CAC fell 31% the next month.</li>
+                                <li><strong>Churn-Risk Scoring:</strong> Built a 4-tier risk score from order-overdue
+                                    ratios for 5,279 customers; routed the 528 highest-risk accounts to sales for
+                                    direct calls and set up win-back emails for the at-risk tier.</li>
+                                <li><strong>Market Basket Analysis:</strong> Ran Apriori on 74,000+ orders across 3
+                                    stores; on one store's 35,000+ orders, Fisher's exact test confirmed 63 of 70
+                                    candidate pairs (top lift 60.8, confidence 77%), forming a proposed bundling
+                                    plan.</li>
+                                <li><strong>Competitor Review Analysis (NLP):</strong> Analyzed 27,000+ reviews of 100+
+                                    products from 14 competitors with an NLTK pipeline, surfacing 22 recurring defect
+                                    themes that fed product specs for a new brand's pre-launch.</li>
+                                <li><strong>Pricing Automation:</strong> Automated weekly competitor price tracking for
+                                    about 500 SKUs across 6 competitors with Python and Google Apps Script, replacing
+                                    manual price collection.</li>
+                            </ul>
+                            <div class="tags-flex">
+                                <span class="tag">Looker Studio</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Python</span>
+                                <span class="tag">NLTK</span>
+                                <span class="tag">Google Apps Script</span>
+                                <span class="tag">Marketing Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Education Section -->
-        <section id="education" class="section-padding bg-secondary-soft">
+        <section id="education" class="section-padding">
             <div class="container">
                 <div class="section-header text-center">
                     <span class="section-subtitle">Education</span>
@@ -553,6 +611,57 @@
                 </div>
 
                 <div class="projects-grid-new">
+                    <!-- Dubai Rental Yield -->
+                    <div class="project-card-new gradient-overlay-amber">
+                        <div class="project-content-new">
+                            <h3>Dubai Rental Yield & Price Outlook</h3>
+                            <div class="project-subtitle">Community Yields & 12-Month Price Scenarios</div>
+                            <p>Analyzed 16 years of Dubai Land Department sales and 2026 rents with a like-for-like
+                                gross yield: outer communities yield up to 9.3% and Palm Jumeirah flats 4.8%. Backtested
+                                SARIMA against a naive forecast and published a Power BI report and a public Streamlit
+                                app.</p>
+                            <div class="tags-flex">
+                                <span class="tag-xs">DuckDB SQL</span>
+                                <span class="tag-xs">Python</span>
+                                <span class="tag-xs">SARIMA</span>
+                                <span class="tag-xs">Power BI</span>
+                                <span class="tag-xs">Streamlit</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/DilroseWorks/dubai-rental-yield-and-price-forecast"
+                                    target="_blank" class="btn btn-sm btn-outline-full"><i class="fab fa-github"></i>
+                                    GitHub</a>
+                                <a href="https://dubai-yield-map.streamlit.app/" target="_blank"
+                                    class="btn btn-sm btn-full"><i class="fas fa-external-link-alt"></i>
+                                    Live App</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GA4 Funnel -->
+                    <div class="project-card-new gradient-overlay-blue">
+                        <div class="project-content-new">
+                            <h3>GA4 E-commerce Funnel & Purchase Propensity</h3>
+                            <div class="project-subtitle">Funnel Analysis, XGBoost Model & AI Weekly Briefing</div>
+                            <p>Analyzed 270K users' GA4 events in BigQuery: checkout-to-payment was the biggest leak
+                                (59% pass-through), worth about $35K per quarter. A first-session XGBoost model put 46%
+                                of later buyers in the top 5% of users (9.3x lift).</p>
+                            <div class="tags-flex">
+                                <span class="tag-xs">BigQuery SQL</span>
+                                <span class="tag-xs">Python</span>
+                                <span class="tag-xs">XGBoost</span>
+                                <span class="tag-xs">Looker Studio</span>
+                                <span class="tag-xs">Gemini API</span>
+                            </div>
+                            <div class="project-actions">
+                                <a href="https://github.com/DilroseWorks/GA4-ecommerce-funnel-analysis"
+                                    target="_blank" class="btn btn-sm btn-outline-full"><i class="fab fa-github"></i>
+                                    GitHub</a>
+                                <a href="https://datastudio.google.com/reporting/3fbea5f8-3f9b-46e5-8049-f2b38182124d"
+                                    target="_blank" class="btn btn-sm btn-full"><i class="fas fa-external-link-alt"></i>
+                                    Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
                     <!-- Project 1 -->
                     <div class="project-card-new gradient-overlay-blue">
                         <div class="project-content-new">
@@ -724,11 +833,11 @@
                                     <p class="font-medium">mohameddilrose2018@gmail.com</p>
                                 </div>
                             </a>
-                            <a href="tel:+919048581457" class="contact-card glass hover-slide">
+                            <a href="tel:+971506431457" class="contact-card glass hover-slide">
                                 <div class="icon-box"><i class="fas fa-phone"></i></div>
                                 <div>
                                     <p class="text-sm text-muted">Phone</p>
-                                    <p class="font-medium">+91 9048581457</p>
+                                    <p class="font-medium">+971 50 643 1457</p>
                                 </div>
                             </a>
                             <a href="https://www.linkedin.com/in/mohamed-dilrose-365554230/" target="_blank"
@@ -743,7 +852,7 @@
                                 <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
                                 <div>
                                     <p class="text-sm text-muted">Location</p>
-                                    <p class="font-medium">India</p>
+                                    <p class="font-medium">Abu Dhabi, UAE</p>
                                 </div>
                             </div>
                         </div>
